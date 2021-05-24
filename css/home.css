@@ -1,0 +1,454 @@
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+ /* .quote{
+
+
+  margin-left: 434px;
+  margin-top: 106px;
+
+  font-size: 30px;
+ font-family: 'Pacifico', cursive;
+ text-align: center;
+ opacity: 1;
+ display: inline-flex;
+
+}  */
+#grad{
+  background-image: #f1c5c5;
+  width: auto;
+}
+
+#first-section{
+  color: white;
+  border: 0;
+background-image:url('bg.jpg');
+  background-repeat: no-repeat;
+height: 500px;
+background-size:cover;
+  box-sizing: border-box;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+width: auto;
+}
+#nav{
+  background-image:url('bg.jpg');
+
+
+  margin-bottom: 1px solid black;
+
+
+    font-size: 1.5rem;
+
+}
+
+.nb{
+  font-size: 1.2rem;
+  color: white;
+}
+#search{
+opacity: 0.4;
+border-radius: 20px;
+border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    cursor: pointer;
+
+transition: 0.30s;
+}
+
+#search:hover{
+  width: 250px;
+  cursor: pointer;
+}
+/* side bar */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+   background-image: linear-gradient(to left,#6a097d,black);
+}
+
+.container-1{
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: #000;
+  font-size: 20px;
+}
+
+.container-1 .sidebar{
+  width: 0px;
+  height: 100%;
+
+
+  padding: 60px 0px;
+  position: -webkit-sticky;
+  position: fixed;
+  margin-top: 10px;
+}
+
+.container-1 .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container-1 .sidebar ul li{
+  padding: 7px;
+  /* border-bottom: 1px solid #bdb8d7; */
+  /* border-bottom: 1px solid rgba(0,0,0,0.05); */
+  /* border-top: 1px solid rgba(255,255,255,0.05); */
+}
+
+.container-1 .sidebar ul li a{
+  color: #bdb8d7;
+
+}
+
+.container-1 .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.container-1 .sidebar ul li:hover{
+  background-color: white;
+  opacity: 0.2;
+
+  transition: 0.30s;
+}
+
+.container-1 .sidebar ul li:hover a{
+  color:white;
+  text-decoration: none;
+}
+
+.container-1 .sidebar .social_media{
+
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.container-1 .sidebar a{
+  display: block;
+  width: 40px;
+  /* background: #fff; */
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: large;
+}
+
+.container-1 .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.container-1 .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.container-1 .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 50px;
+}
+
+.container-1.main_content .info div{
+  margin-bottom: 20px;
+}
+
+@media (max-height: 500px){
+  .social_media{
+    display: none !important;
+  }
+}
+
+/* news-carousel */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+#trending-news {
+  height: 450px;
+  background-image:#f1c5c5;
+  width: auto;
+}
+
+#news{
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  opacity: 0.8;
+}
+
+.accordion {
+  width: 100%;
+  padding: 0px 0px 200px 0px;
+  max-width: 1080px;
+  height: 250px;
+  overflow: hidden;
+  margin: 50px auto;
+  /* background-color: #423144; */
+  background-image: #f1c5c5;
+
+}
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.accordion ul li:first-child {
+ clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 49%, 0% 0%);
+}
+
+.accordion ul li:last-child {
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div .btn {
+
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+   background: rgba(255, 0, 0, 0.3);
+}
+
+.accordion ul li:last-child .btn {
+  border-right: 0;
+}
+
+.number {
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #26efb9;
+  font-size: 20px;
+  background-color: #252525;
+  line-height: 40px;
+  width: 40px!important;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  border: solid 2px #26efb9;
+}
+
+.accordion ul li div .btn .content {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div .btn h2 {
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  color: #000;
+}
+
+.accordion ul li div .btn p {
+  font-size: 13.5px;
+  color: #000;
+}
+
+.accordion ul li div .btn a {
+  font-size: 13.5px;
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #3AEFB9;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.accordion ul li div .btn a:hover {
+  /* background-color: #3AEFB9; */
+  color: #FFF;
+}
+
+.accordion ul li:nth-child(1) {
+  background-image: url("https://dc-cdn.s3-ap-southeast-1.amazonaws.com/dc-Cover-j26aptdkrj701mgbomdaah7bn7-20160511234126.Medi.jpeg");
+  /* width: 200px;
+  height: 100px; */
+}
+
+.accordion ul li:nth-child(2) {
+  background-image: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/202008/SPB_stable.jpeg?NA_50BDFyOtHxCexN2331lXJF1PdyMxj&size=770:433");
+}
+
+.accordion ul li:nth-child(3) {
+  background-image: url("https://images.mid-day.com/images/2016/dec/7Arijit-Singh-l.jpg");
+}
+
+.accordion ul li:nth-child(4) {
+  background-image: url("https://images.desimartini.com/media/main/martini_horizontal_600_300/2019-3/113ceafd-a7c5-4397-87e8-3e924689738f.jpg");
+}
+
+.accordion ul li:nth-child(5) {
+  background-image: url("https://www.irishtimes.com/polopoly_fs/1.3536065.1529405642!/image/image.jpg_gen/derivatives/box_620_330/image.jpg");
+}
+
+.accordion ul li:nth-child(6) {
+  background-image: url("https://uploads-bookingentertain.netdna-ssl.com/minified//artists/web_selenagomezbanner460315_040618044931.jpg");
+}
+
+.accordion ul li:nth-child(7) {
+  background-image: url("https://images.news18.com/ibnlive/uploads/2020/05/1589867833_fotojet-18.jpg?impolicy=website&width=534&height=356");
+}
+
+.accordion ul:hover li,
+.accordion ul:focus-within li {
+  width: 8%;
+  border-right: solid 2px #252525;
+  clip-path: polygon(93% 0, 100% 50%, 93% 100%, 0% 100%, 0 50%, 0% 0%);
+}
+
+.accordion ul li:focus {
+  outline: none;
+}
+
+.accordion ul:hover li:hover,
+.accordion ul li:focus,
+.accordion ul:focus-within li:focus {
+  width: 60%;
+  border-right: 0;
+  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 0 50%, 0% 0%);
+}
+
+.accordion ul:hover li:hover .btn,
+.accordion ul li:focus a,
+.accordion ul:focus-within li:focus a {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.accordion ul:hover li:hover .btn .content,
+.accordion ul li:focus .btn .content,
+.accordion ul:focus-within li:focus div.btn .content {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.accordion ul:hover li {
+  width: 8% !important;
+  clip-path: inset(0 0 0 0);
+}
+
+.accordion ul:hover li .btn .content,
+.accordion ul:hover li .btn .number {
+  opacity: 0 !important;
+}
+
+.accordion ul:hover li:hover {
+  width: 60% !important;
+}
+
+.accordion ul:hover li:hover .btn {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.accordion ul:hover li:hover .btn .content {
+  opacity: 1 !important;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.fancybox-content {
+  width: 650px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+
+  .accordion {
+    height: auto;
+  }
+
+  .accordion ul li, .accordion ul li:hover,        .accordion ul:hover li, .accordion ul:hover      li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+#quote{
+  margin-top: 250px;
+  margin-left: 400px;
+ font-family: 'Pacifico', cursive;
+}
+#playlist{
+
+  background-color: #fbf7f0;
+}
+.lbtn{
+  border:none;
+  outline: none;
+  /* text-decoration: none; */
+}

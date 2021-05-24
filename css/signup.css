@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #34495e;
+  }
+  .box{
+    width: 700px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+    opacity: 0.8;
+  }
+  .box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+  transition: 0.30s;
+  letter-spacing: 3px;
+  font-family: 'Bangers', cursive;
+  }
+  .box h1:hover{
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #de4463;
+     font-size: 50px;
+
+  }
+  .box input[type = "text"],.box input[type = "password"],.box input[type= "email"],.box
+  input[type="date"]{
+    border:0;
+    background: none;
+
+    margin: 20px auto;
+    position: absolute;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.30s;
+    float: right;
+    margin-bottom: 10px;
+  }
+  .box input[type = "text"]:focus,.box input[type = "password"]:focus,.box input[type= "email"]:focus,.box
+  input[type="date"]:focus,.box select[name="Country"]:focus{
+    width: 16rem;
+    border-color: #2ecc71;
+
+  }
+  .box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.30s;
+    cursor: pointer;
+    margin-right: 15px;
+
+  }
+  .box input[type = "submit"]:hover{
+    background: #2ecc71;
+  }
+
+  .flex-login{
+   width: 100vh;
+  }
+
+  video{
+    position: fixed;
+     right: 0;
+     bottom: 0;
+     min-width: 100%;
+     min-height: 100%;
+  }
+
+  .box option{
+    color: black;
+  }
+
+  .box{
+    color:white;
+
+  }
+
+  .box p{
+    float: left;
+     position: absolute;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+.box select[name="Country"]{
+  border:0;
+  background: none;
+
+  margin: 20px auto;
+  position: absolute;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 220px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.30s;
+  float: right;
+  margin-bottom: 10px;
+}
